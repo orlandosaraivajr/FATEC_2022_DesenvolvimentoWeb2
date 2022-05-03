@@ -11,3 +11,12 @@ Nesse cadastro, teremos as seguintes informações:
 
 Vamos utilizar banco de dados MySQL e orientação a objetos para separar o acesso ao banco de dados.
 
+### CRUD
+
+* Create
+* Read
+* Update
+* Delete
+
+
+
