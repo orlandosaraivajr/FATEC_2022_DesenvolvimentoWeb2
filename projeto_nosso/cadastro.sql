@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Tempo de geração: 03/05/2022 às 19:50
+-- Tempo de geração: 03/05/2022 às 20:50
 -- Versão do servidor: 8.0.28-0ubuntu0.20.04.3
 -- Versão do PHP: 7.4.3
 
@@ -23,7 +23,6 @@ SET time_zone = "+00:00";
 --
 CREATE DATABASE cadastro;
 USE cadastro;
-
 -- --------------------------------------------------------
 
 --
@@ -45,7 +44,9 @@ CREATE TABLE `cliente` (
 
 INSERT INTO `cliente` (`id`, `nome`, `endereco`, `idade`, `cpf`, `sexo`) VALUES
 (1, 'José da Silva', 'avenida 1, 10', 20, '123.456.789.10', 'M'),
-(2, 'Maria das Neves', 'avenida 2, 20', 19, '131.456.789.10', 'F');
+(2, 'Maria das Neves', 'avenida 2, 20', 19, '131.456.789.10', 'F'),
+(3, 'José das Couves', 'endereco', 10, '123.456.789.11', 'M'),
+(4, 'Rubens', 'Av 80A', 25, '321.654.321.55', 'M');
 
 --
 -- Índices de tabelas apagadas
@@ -56,6 +57,16 @@ INSERT INTO `cliente` (`id`, `nome`, `endereco`, `idade`, `cpf`, `sexo`) VALUES
 --
 ALTER TABLE `cliente`
   ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT de tabelas apagadas
+--
+
+--
+-- AUTO_INCREMENT de tabela `cliente`
+--
+ALTER TABLE `cliente`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
